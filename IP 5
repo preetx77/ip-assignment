@@ -1,0 +1,21 @@
+"""5.WAP to give the discount on the basis of Total purchase"""
+i = float(input("Enter the total purchase amount: "))
+discount_percentage = 0
+
+if i < 499:
+    print("No discount applicable.")
+elif 499 <= i < 2000:
+    discount_percentage = 0.10 
+elif 2000 <= i < 5000:
+    discount_percentage = 0.15  
+else:
+    discount_percentage = 0.25 
+
+discount_amount = i * discount_percentage
+
+final_price = i - discount_amount
+
+if discount_percentage > 0:
+    print(f"Discount applicable: {discount_percentage * 100}%")
+    print(f"Discount amount: ${discount_amount:.2f}")
+print(f"Final price after discount: ${final_price:.2f}")
