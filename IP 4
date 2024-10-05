@@ -1,0 +1,59 @@
+""" 4.	WAP for mobile store using nested if  """
+
+print("Welcome to the Mobile Store!")
+print("Available brands: Samsung, Apple, OnePlus")
+brand = input("Enter the brand you are interested in: ")
+
+if brand == "Samsung":
+    print("Available models: A32, A52, S21")
+    model = input("Enter the model you want: ")
+    
+    if model == "A32":
+        price = 250
+    elif model == "A52":
+        price = 350
+    elif model == "S21":
+        price = 800
+    else:
+        print("Invalid model selection.")
+        model = None
+        price = None
+
+elif brand == "Apple":
+    print("Available models: iPhone 12, iPhone 13, iPhone 14")
+    model = input("Enter the model you want: ")
+    
+    if model == "iPhone 12":
+        price = 699
+    elif model == "iPhone 13":
+        price = 799
+    elif model == "iPhone 14":
+        price = 999
+    else:
+        print("Invalid model selection.")
+        model = None
+        price = None
+
+elif brand == "OnePlus":
+    print("Available models: OnePlus 9, OnePlus 10, OnePlus Nord")
+    model = input("Enter the model you want: ")
+    
+    if model == "OnePlus 9":
+        price = 729
+    elif model == "OnePlus 10":
+        price = 899
+    elif model == "OnePlus Nord":
+        price = 499
+    else:
+        print("Invalid model selection.")
+        model = None
+        price = None
+
+else:
+    print("Brand not available.")
+    model = None
+    price = None
+
+if model and price is not None:
+    print(f"You have selected {model} from {brand}.")
+    print(f"The price is: ${price}")
