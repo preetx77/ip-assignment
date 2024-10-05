@@ -1,0 +1,12 @@
+""" 7. WAP to print one character from  s = 'sample program' """
+
+s = 'sample program'
+
+index = int(input("Enter the index of the character you want to print (0 to 14): "))
+
+if index >= 0 and index < len(s):
+
+    print("The character at index", index, "is:", s[index])
+else:
+    print("Invalid index. Please enter a number between 0 and 14.")
+
