@@ -1,12 +1,5 @@
-***NAME :  PRN : ***
-""" 9.	WAP to find out number is +ve or -ve """
+"""NAME :  PRN : """
+"""9.	WAP to print 10-20 numbers in reverse order (20-10)"""
+for number in range(20, 9, -1): 
+    print(number)
 
-number = float(input("Enter a number: "))
-
-
-if number > 0:
-    print("The number is positive.")
-elif number < 0:
-    print("The number is negative.")
-else:
-    print("The number is zero.")
