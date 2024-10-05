@@ -1,3 +1,4 @@
+"""NAME : PRN : """
 """ 7. WAP to print one character from  s = 'sample program' """
 
 s = 'sample program'
